@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Pasifico;
+    src: url(./fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: Badscript;
+    src: url(./fonts/BadScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(./fonts/Ubuntu-Light.woff2);
+}
+
+
+.title{
+    text-align: center;
+    color: #505050;
+    font-size: 56px;
+font-family: Pasifico;
+text-shadow: 3px 3px 4px #000000;
+ margin-top: 40px;
+ margin-bottom: 0;
+}
+
+@media screen and (max-width:700px){
+    .title{
+        font-size: 26px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        height: 35px;
+    }
+}
+
+.subtitle{
+margin: 0;
+}
+
+.main{
+    max-width: 960px;
+    min-width: 320px;
+    background: linear-gradient(45deg, #fff, #929292);
+    min-height:  100vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+margin: 0;
+margin-top: 35px;
+margin-bottom: 40px;
+width: 80%;
+text-align: center;
+font-family: Ubuntu;
+}
+
+.card{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 260px;
+height: 500px;
+border-radius: 10px;
+box-shadow: 4px 4px 10px #666666;
+margin: 20px;
+transition: transform 0.2s linear 0.1s;
+}
+
+.card:hover{
+cursor: pointer;
+transform: scale(1.02);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card_title{
+font-family: Badscript;
+text-align: center;
+font-size: 25px;
+width: 90%;
+color: #474747;
+text-shadow: 1px 1px 3px #161616;
+margin: 0;
+margin-top: 40px;
+}
+
+.card__item_1{
+    background-image: url(./img/foto1.jpg);
+background-position: -200px;
+background-size: cover;
+}
+
+.card__item_2{
+    background-image: url(./img/foto10.jpg);
+background-position: -5px;
+background-size: cover;
+}
+
+.card__item_3{
+    background-image: url(./img/foto4.jpg);
+background-position: -107px;
+background-size: cover;
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup__conteiner{
+width: 520px;
+height: 470px;
+background-color: #fff;
+border-radius: 5px;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+@media screen and (max-width:865px){
+    .popup__conteiner{
+        height: 450px;
+        width: 270px;
+    }
+}
+
+.popup__button_exit{
+    position: absolute;
+    top: -37px;
+    right: -37px;
+    background-image: url(./img/CloseButoon.svg);
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (max-width:400px){
+    .popup__button_exit{
+        right:  0px;
+    }
+}
+
+.popup__title{
+    text-align: center;
+    font-family: Badscript;
+    color: #000;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.popup__image{
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.popup__text{
+    font-family: Ubutu;
+    font-weight: 100;
+    text-align: center;
+    color: #000;
+    margin-top: 20px;
+}
+
+.popup__opened{
+    visibility: visible;
+    opacity: 1;
+}
